@@ -8,6 +8,7 @@
 import Foundation
 import Resolver
 
+@MainActor
 class SettingsViewModel: ObservableObject, ErrorHandler {
     
     @Injected var settingsController: SettingsController

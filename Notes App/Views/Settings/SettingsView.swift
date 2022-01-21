@@ -18,6 +18,7 @@ struct SettingsView: View {
         ZStack {
             Form {
                 Section {
+                    Text(settingsViewModel.userInfo?.name ?? "")
                     Text(settingsViewModel.userInfo?.username ?? "")
                 }
                 
@@ -44,6 +45,11 @@ struct SettingsView: View {
                     Section("Environment") {
                         Text(BuildConfiguration.shared.environment.rawValue)
                     }
+                }
+            }
+            .refreshable {
+                Task {
+                    await settingsViewModel.getUserInfo()
                 }
             }
             
