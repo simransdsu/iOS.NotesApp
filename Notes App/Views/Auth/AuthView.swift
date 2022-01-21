@@ -19,7 +19,7 @@ struct AuthView: View {
             case .loading:
                 CCSplashScreenView()
             case .loggedIn:
-                MainHomeView()
+                HomeView()
                     .environmentObject(authSession)
             case .loggedOut:
                 if authSession.showLoginView {

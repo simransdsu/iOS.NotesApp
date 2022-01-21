@@ -8,7 +8,7 @@
 import SwiftUI
 import Resolver
 
-struct MainHomeView: View {
+struct HomeView: View {
     
     @Environment(\.presentationMode)
     var presentationMode
@@ -42,6 +42,6 @@ struct MainHomeView: View {
 
 struct MainHomeView_Previews: PreviewProvider {
     static var previews: some View {
-        MainHomeView()
+        HomeView()
     }
 }

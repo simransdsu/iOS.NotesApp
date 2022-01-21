@@ -34,7 +34,7 @@
 		49B47B91279A67C80025412F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B47B90279A67C80025412F /* UserService.swift */; };
 		49B47B93279A68530025412F /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B47B92279A68530025412F /* SettingsViewModel.swift */; };
 		49B47B95279A68830025412F /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B47B94279A68830025412F /* SettingsController.swift */; };
-		49B62C8C27880AFD00129D2F /* MainHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B62C8B27880AFD00129D2F /* MainHomeView.swift */; };
+		49B62C8C27880AFD00129D2F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B62C8B27880AFD00129D2F /* HomeView.swift */; };
 		49B62C8E2788105800129D2F /* CCCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B62C8D2788105800129D2F /* CCCloseButton.swift */; };
 		49B62C90278810BD00129D2F /* CCFootnoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B62C8F278810BD00129D2F /* CCFootnoteButton.swift */; };
 		49B62C93278814AF00129D2F /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B62C92278814AF00129D2F /* Colors.swift */; };
@@ -107,7 +107,7 @@
 		49B47B90279A67C80025412F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		49B47B92279A68530025412F /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
 		49B47B94279A68830025412F /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		49B62C8B27880AFD00129D2F /* MainHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeView.swift; sourceTree = "<group>"; };
+		49B62C8B27880AFD00129D2F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		49B62C8D2788105800129D2F /* CCCloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCloseButton.swift; sourceTree = "<group>"; };
 		49B62C8F278810BD00129D2F /* CCFootnoteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCFootnoteButton.swift; sourceTree = "<group>"; };
 		49B62C92278814AF00129D2F /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
@@ -316,7 +316,7 @@
 		49B62C8A27880AF100129D2F /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				49B62C8B27880AFD00129D2F /* MainHomeView.swift */,
+				49B62C8B27880AFD00129D2F /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -556,7 +556,7 @@
 				49676552278960B300237FF3 /* AuthService.swift in Sources */,
 				499C700727991A7C003A80E1 /* Note.swift in Sources */,
 				4967650D27892F3E00237FF3 /* String+Extensions.swift in Sources */,
-				49B62C8C27880AFD00129D2F /* MainHomeView.swift in Sources */,
+				49B62C8C27880AFD00129D2F /* HomeView.swift in Sources */,
 				49EE1762278AC6CD00A38E4F /* HttpLoggedInUserResponser.swift in Sources */,
 				49EE1756278A9D8100A38E4F /* CCLoadingView.swift in Sources */,
 				49EE175E278AC50300A38E4F /* NotesViewModel.swift in Sources */,

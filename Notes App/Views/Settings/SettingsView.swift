@@ -9,42 +9,22 @@ import SwiftUI
 
 struct SettingsView: View {
     
+    // MARK: - Property wrappers
     @Environment(\.presentationMode) var presentationMode
     
     @EnvironmentObject var authSession: AuthSession
+    
     @StateObject var settingsViewModel = SettingsViewModel()
     
+    // MARK: - body
     var body: some View {
         ZStack {
             Form {
-                Section {
-                    Text(settingsViewModel.userInfo?.name ?? "")
-                    Text(settingsViewModel.userInfo?.username ?? "")
-                }
+                userInfoView
+                logoutButton
                 
-                Button {
-                    authSession.logout()
-                    presentationMode.wrappedValue.dismiss()
-                } label: {
-                    Text("Logout")
-                        .foregroundColor(.red)
-                }
-                
-                //---------------------------------------------------------//
                 if BuildConfiguration.shared.environment != .debugProduction {
-                    NavigationLink("Settings") {
-                        SettingsView()
-                    }
-                    
-                    Button {
-                        authSession.changeViewState()
-                    } label: {
-                        Text("Change View State")
-                    }
-                    
-                    Section("Environment") {
-                        Text(BuildConfiguration.shared.environment.rawValue)
-                    }
+                    debugMenu
                 }
             }
             .refreshable {
@@ -60,6 +40,42 @@ struct SettingsView: View {
             .task {
                 await settingsViewModel.getUserInfo()
             }
+    }
+    
+    // MARK: - UI Views
+    private var userInfoView: some View {
+        Section {
+            Text(settingsViewModel.userInfo?.name ?? "")
+            Text(settingsViewModel.userInfo?.username ?? "")
+        }
+    }
+    
+    private var logoutButton: some View {
+        Button {
+            authSession.logout()
+            presentationMode.wrappedValue.dismiss()
+        } label: {
+            Text("Logout")
+                .foregroundColor(.red)
+        }
+    }
+    
+    private var debugMenu: some View {
+        Group {
+            NavigationLink("Settings") {
+                SettingsView()
+            }
+            
+            Button {
+                authSession.changeViewState()
+            } label: {
+                Text("Change View State")
+            }
+            
+            Section("Environment") {
+                Text(BuildConfiguration.shared.environment.rawValue)
+            }
+        }
     }
 }
 

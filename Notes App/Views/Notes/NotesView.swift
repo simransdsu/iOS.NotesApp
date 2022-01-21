@@ -9,42 +9,54 @@ import SwiftUI
 
 struct NotesView: View {
     
+    // MARK: - Property Wrappers
     @StateObject var notesViewModel = NotesViewModel()
     
+    // MARK: - body
     var body: some View {
         ZStack {
-            VStack {
-                List {
-                    ForEach(notesViewModel.notes, id: \.id) { note in
-                        Text(note.text)
-                    }.onDelete { indexSet in
-                        onDelete(indexSet: indexSet)
-                    }
-                }
-                .refreshable {
-                    getNotes()
-                }
-            }
-            
+            notesView
             if notesViewModel.isLoading && notesViewModel.notes.count == 0  {
                 CCLoadingView(message: "")
             }
         }
-        .toolbar(content: {
-            ToolbarItem(placement: .bottomBar) {
-                CCRoundedButton(text: "+") {
-                    notesViewModel.presentAddNoteView = true
-                }.offset(y: 10)
-            }
-        })
-        .sheet(isPresented: $notesViewModel.presentAddNoteView, content: {
-            NavigationView {
-                AddNoteView(notesViewModel: notesViewModel)
-            }
-        })
+        .toolbar(content: { addNoteToolbarItem })
+        .sheet(isPresented: $notesViewModel.presentAddNoteView,
+               content: { addNoteWithNavigationView })
         .onAppear(perform: getNotes)
     }
     
+    // MARK: - UI Views
+    private var addNoteToolbarItem: some ToolbarContent {
+        ToolbarItem(placement: .bottomBar) {
+            CCRoundedButton(text: "+") {
+                notesViewModel.presentAddNoteView = true
+            }.offset(y: 10)
+        }
+    }
+    
+    private var addNoteWithNavigationView: some View {
+        NavigationView {
+            AddNoteView(notesViewModel: notesViewModel)
+        }
+    }
+    
+    private var notesView: some View {
+        VStack {
+            List {
+                ForEach(notesViewModel.notes, id: \.id) { note in
+                    Text(note.text)
+                }.onDelete { indexSet in
+                    onDelete(indexSet: indexSet)
+                }
+            }
+            .refreshable {
+                getNotes()
+            }
+        }
+    }
+    
+    // MARK: - Helper methods
     private func getNotes() {
         Task {
             await notesViewModel.getNotes()

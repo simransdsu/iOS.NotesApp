@@ -8,24 +8,16 @@
 import SwiftUI
 
 struct AddNoteView: View {
-    
+   
+    // MARK: - Property wrappers
     @Environment(\.presentationMode) var presentationMode
     
     @ObservedObject var notesViewModel: NotesViewModel
     
+    // MARK: - body
     var body: some View {
         ZStack {
-            VStack {
-                Form {
-                    TextField("Enter your note here...", text: $notesViewModel.noteText)
-                }
-                
-                CCButton(action:saveNote, text: "Save")
-                    .padding()
-                
-                Spacer()
-            }
-            
+            addNoteView
             if notesViewModel.isLoading {
                 CCLoadingView(message: "")
             }
@@ -33,6 +25,21 @@ struct AddNoteView: View {
         .navigationTitle("Save Note")
     }
     
+    // MARK: - UI Views
+    private var addNoteView: some View {
+        VStack {
+            Form {
+                TextField("Enter your note here...", text: $notesViewModel.noteText)
+            }
+            
+            CCButton(action:saveNote, text: "Save")
+                .padding()
+            
+            Spacer()
+        }
+    }
+    
+    // MARK: - Helper methods
     private func saveNote() {
         Task {
             await notesViewModel.saveNote()

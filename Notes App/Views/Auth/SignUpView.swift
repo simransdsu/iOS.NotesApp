@@ -32,7 +32,7 @@ struct SignUpView: View {
         }
         .padding()
         .fullScreenCover(isPresented: $signupViewModel.userSuccessfullyCreatedAndSignIn, content: {
-            MainHomeView()
+            HomeView()
         })
         .alert(isPresented: $signupViewModel.showSignupError) {
             Alert(title: Text(signupViewModel.signupErrorMessage))
