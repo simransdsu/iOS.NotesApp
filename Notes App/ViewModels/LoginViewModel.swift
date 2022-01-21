@@ -15,8 +15,8 @@ class LoginViewModel: ObservableObject, ErrorHandler {
     @Published var passwordTextField: String = ""
     @Published var isFormValid: Bool = false
     @Published var userSuccessfullySignedIn = false
-    @Published var showLoginError = false
-    @Published var loginErrorMessage: String = ""
+    @Published var errorOccurred: Bool = false
+    @Published var errorMessage: String = ""
     @Published var viewState: AuthViewState = .loggedOut
     
     private var cancellable = Set<AnyCancellable>()
@@ -36,14 +36,14 @@ class LoginViewModel: ObservableObject, ErrorHandler {
             try await authController.login(email: emailTextField, password: passwordTextField)
             
             self.userSuccessfullySignedIn = true
-            self.showLoginError = false
+            self.errorOccurred = false
             self.emailTextField = ""
             self.passwordTextField = ""
             viewState = .loggedIn
         } catch let error {
-            self.loginErrorMessage = handleError(error: error)
+            self.errorMessage = handleError(error: error)
             self.userSuccessfullySignedIn = false
-            self.showLoginError = true
+            self.errorOccurred = true
             self.passwordTextField = ""
             viewState = .error(handleError(error: error))
         }

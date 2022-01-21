@@ -36,10 +36,14 @@ struct SettingsView: View {
             if settingsViewModel.isLoading && settingsViewModel.userInfo == nil{
                 CCLoadingView(message: "")
             }
-        }.navigationTitle("Settings")
-            .task {
-                await settingsViewModel.getUserInfo()
-            }
+        }
+        .alert(isPresented: $settingsViewModel.errorOccurred) {
+            Alert(title: Text(settingsViewModel.errorMessage))
+        }
+        .navigationTitle("Settings")
+        .task {
+            await settingsViewModel.getUserInfo()
+        }
     }
     
     // MARK: - UI Views

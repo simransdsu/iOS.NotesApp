@@ -16,10 +16,10 @@ class NotesViewModel: ObservableObject, ErrorHandler {
     
     @Published var errorOccurred: Bool = false
     @Published var errorMessage: String = ""
-    @Published var presentAddNoteView: Bool = false
-    @Published var notes: [Note] = []
     @Published var isLoading: Bool = false
     
+    @Published var presentAddNoteView: Bool = false
+    @Published var notes: [Note] = []
     @Published var noteText: String = ""
     
     func getNotes() async {

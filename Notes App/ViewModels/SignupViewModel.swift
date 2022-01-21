@@ -17,8 +17,8 @@ class SignupViewModel: ObservableObject, ErrorHandler {
     @Published var nameTextField: String = ""
     @Published var isFormValid: Bool = false
     @Published var userSuccessfullyCreatedAndSignIn = false
-    @Published var showSignupError = false
-    @Published var signupErrorMessage: String = ""
+    @Published var errorOccurred: Bool = false
+    @Published var errorMessage: String = ""
     @Published var viewState: AuthViewState = .loggedOut
     
     
@@ -39,15 +39,15 @@ class SignupViewModel: ObservableObject, ErrorHandler {
             try await authController.login(email: emailTextField, password: passwordTextField)
             
             self.userSuccessfullyCreatedAndSignIn = true
-            self.showSignupError = false
+            self.errorOccurred = false
             self.emailTextField = ""
             self.passwordTextField = ""
             self.nameTextField = ""
             viewState = .loggedIn
         } catch let error {
-            self.signupErrorMessage = handleError(error: error)
+            self.errorMessage = handleError(error: error)
             self.userSuccessfullyCreatedAndSignIn = false
-            self.showSignupError = true
+            self.errorOccurred = true
             self.passwordTextField = ""
             viewState = .error(handleError(error: error))
         }

@@ -10,6 +10,7 @@ import Foundation
 protocol ErrorHandler { }
 
 extension ErrorHandler {
+    
     func handleError(error: Error) -> String {
         
         if let error = error as? APIErrors {

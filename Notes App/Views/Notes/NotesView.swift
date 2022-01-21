@@ -23,6 +23,9 @@ struct NotesView: View {
         .toolbar(content: { addNoteToolbarItem })
         .sheet(isPresented: $notesViewModel.presentAddNoteView,
                content: { addNoteWithNavigationView })
+        .alert(isPresented: $notesViewModel.errorOccurred) {
+            Alert(title: Text(notesViewModel.errorMessage))
+        }
         .onAppear(perform: getNotes)
     }
     

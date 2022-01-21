@@ -34,8 +34,8 @@ struct SignUpView: View {
         .fullScreenCover(isPresented: $signupViewModel.userSuccessfullyCreatedAndSignIn, content: {
             HomeView()
         })
-        .alert(isPresented: $signupViewModel.showSignupError) {
-            Alert(title: Text(signupViewModel.signupErrorMessage))
+        .alert(isPresented: $signupViewModel.errorOccurred) {
+            Alert(title: Text(signupViewModel.errorMessage))
         }
     }
     

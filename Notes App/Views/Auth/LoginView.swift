@@ -32,8 +32,8 @@ struct LoginView: View {
         .fullScreenCover(isPresented: $loginViewModel.userSuccessfullySignedIn, content: {
             HomeView()
         })
-        .alert(isPresented: $loginViewModel.showLoginError) {
-            Alert(title: Text(loginViewModel.loginErrorMessage))
+        .alert(isPresented: $loginViewModel.errorOccurred) {
+            Alert(title: Text(loginViewModel.errorMessage))
         }
     }
     
