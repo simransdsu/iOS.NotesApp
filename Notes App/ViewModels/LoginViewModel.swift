@@ -9,7 +9,7 @@ import Combine
 import Resolver
 
 @MainActor
-class LoginViewModel: ObservableObject {
+class LoginViewModel: ObservableObject, ErrorHandler {
     
     @Published var emailTextField: String = ""
     @Published var passwordTextField: String = ""
@@ -24,10 +24,12 @@ class LoginViewModel: ObservableObject {
     @Injected private var authController: AuthController
     
     init() {
+        
         setupEmailTextFieldValidation()
     }
     
     public func login() async {
+        
         print("\(self) \(#function)")
         viewState = .loading
         do {
@@ -48,6 +50,7 @@ class LoginViewModel: ObservableObject {
     }
     
     private func setupEmailTextFieldValidation() {
+        
         $emailTextField
             .combineLatest($passwordTextField)
             .sink { [weak self] email, password in
@@ -56,6 +59,3 @@ class LoginViewModel: ObservableObject {
             }.store(in: &cancellable)
     }
 }
-
-
-extension LoginViewModel: ErrorHandler {}

@@ -13,6 +13,7 @@ class NotesService {
     @Injected private var authClient: AuthNetworkingClient
     
     func getUserNotes() async throws -> [Note] {
+        
         guard let url = URL(string: URLs.GET_notes) else {
             throw APIErrors.invalidUrl
         }
@@ -24,6 +25,7 @@ class NotesService {
     }
     
     func saveNote(_ noteText: String) async throws {
+        
         guard let url = URL(string: URLs.POST_notes) else {
             throw APIErrors.invalidUrl
         }
@@ -40,6 +42,7 @@ class NotesService {
     }
     
     func deleteNote(_ id: Int) async throws {
+        
         guard let url = URL(string: URLs.DELETE_notes(id: id)) else {
             throw APIErrors.invalidUrl
         }

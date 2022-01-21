@@ -13,8 +13,8 @@ class AuthService {
     @Injected private var client: NetworkingClient
     
     func signup(name: String, email: String, password: String) async throws {
-        print("\(self) \(#function)", URLs.POST_signupURL)
         
+        print("\(self) \(#function)", URLs.POST_signupURL)
         guard let url = URL(string: URLs.POST_signupURL) else { return }
         let body = [
             "email": email,
@@ -32,8 +32,8 @@ class AuthService {
     }
     
     func login(email: String, password: String) async throws -> HttpLoginSuccessResponse {
-        print("\(self) \(#function)", URLs.POST_loginURL)
         
+        print("\(self) \(#function)", URLs.POST_loginURL)
         guard let url = URL(string: URLs.POST_loginURL) else {
             throw APIErrors.invalidUrl
         }

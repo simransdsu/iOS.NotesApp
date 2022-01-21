@@ -11,6 +11,7 @@ protocol ErrorHandler { }
 
 extension ErrorHandler {
     func handleError(error: Error) -> String {
+        
         if let error = error as? APIErrors {
             switch(error) {
                 
@@ -24,7 +25,6 @@ extension ErrorHandler {
                 return "Your session expired. Login again."
             }
         }
-        
         return "Something went wrong, please try again."
     }
 }

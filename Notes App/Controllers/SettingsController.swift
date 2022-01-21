@@ -13,6 +13,7 @@ class SettingsController {
     @Injected var userService: UserService
     
     func getLoggedUserInfo() async throws -> UserInfo {
+        
         return try await userService.getLoggedInUser()
     }
 }

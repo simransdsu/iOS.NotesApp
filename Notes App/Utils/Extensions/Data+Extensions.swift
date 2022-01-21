@@ -8,6 +8,7 @@
 import Foundation
 
 extension Data {
+    
     // Converts JSON data to specified object
     func converData<T : Decodable>(toType type: T.Type,
                                      dateDecodingStrategy: JSONDecoder.DateDecodingStrategy? = nil,

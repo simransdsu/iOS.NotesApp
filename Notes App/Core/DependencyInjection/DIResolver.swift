@@ -9,7 +9,9 @@ import Foundation
 import Resolver
 
 extension Resolver: ResolverRegistering {
+    
     public static func registerAllServices() {
+        
         register { BuildConfiguration.shared }
         
         register { URLSession(configuration: .default) }

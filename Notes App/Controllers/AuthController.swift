@@ -14,12 +14,11 @@ class AuthController {
     @Injected private var tokenService: TokenService
     
     func signup(name: String, email: String, password: String) async throws {
-        print("\(self) \(#function)")
+        
         try await authService.signup(name: name, email: email, password: password)
     }
     
     func login(email: String, password: String) async throws {
-        print("\(self) \(#function)")
         
         let loginResponse = try await authService.login(email: email, password: password)
         tokenService.saveJWTToken(loginResponse.jwtToken)
@@ -27,6 +26,7 @@ class AuthController {
     }
     
     func isUserLoggedIn() async throws -> Bool {
+        
         if tokenService.isJwtTokenValid() {
             return true
         }
@@ -44,10 +44,12 @@ class AuthController {
     }
     
     func isRefreshTokenValid() -> Bool {
+        
         return tokenService.isRefreshTokenValid()
     }
     
     func getNewJwtToken() async throws {
+        
         let tokens = try await tokenService.generateNewJwtToken()
         tokenService.saveJWTToken(tokens.jwtToken)
         tokenService.saveRefreshToken(tokens.refreshToken)

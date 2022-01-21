@@ -9,6 +9,7 @@ import Foundation
 import Resolver
 
 public class NetworkingClient {
+    
     @Injected private var session: URLSession
     
     public func makeRequest<ResponseType: Decodable>(
@@ -36,6 +37,7 @@ public class NetworkingClient {
     
     private func parseResponse<ResponseType: Decodable>(type: ResponseType.Type,
                                                          response: APIHttpResponse) throws -> ResponseType {
+        
         print(response.debugString)
         switch response.statusCode {
         case 200..<300:
@@ -89,6 +91,7 @@ public class NetworkingClient {
 
 
 public struct APIHttpResponse {
+    
     let data: Data
     let response: HTTPURLResponse
     var statusCode: Int {
@@ -102,6 +105,7 @@ public struct APIHttpResponse {
 }
 
 public enum APIHttpMethod: String {
+    
     case GET
     case POST
     case PUT
@@ -111,6 +115,7 @@ public enum APIHttpMethod: String {
 
 
 public enum APIErrors: Error {
+    
     case invalidResponse
     case invalidRequestWithIncorrectUrlFormat
     case badRequest(String)

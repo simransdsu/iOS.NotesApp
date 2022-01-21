@@ -8,6 +8,7 @@
 import SwiftUI
 
 extension Color {
+    
     static let LabelColor = Color("LabelColor")
     static let AccentColor = Color("AccentColor")
     static let White = Color.white

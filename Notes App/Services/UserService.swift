@@ -13,6 +13,7 @@ class UserService {
     @Injected private var authClient: AuthNetworkingClient
     
     func getLoggedInUser() async throws -> UserInfo {
+        
         guard let url = URL(string: URLs.POST_me) else {
             throw APIErrors.invalidUrl
         }

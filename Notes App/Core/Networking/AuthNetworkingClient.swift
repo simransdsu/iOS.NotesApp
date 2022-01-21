@@ -56,14 +56,17 @@ class AuthNetworkingClient {
     
     
     func isJwtTokenValid() -> Bool {
+        
         return isTokenValid(jwtToken)
     }
     
     func isRefreshTokenValid() -> Bool {
+        
         return isTokenValid(refreshToken)
     }
     
     func generateNewJwtToken() async throws -> HttpLoginSuccessResponse  {
+        
         guard let url = URL(string: URLs.POST_refreshToken) else { throw APIErrors.invalidUrl }
         let body = ["refreshToken": refreshToken]
         let headers = ["Content-Type" : "application/json"]
@@ -78,6 +81,7 @@ class AuthNetworkingClient {
     }
     
     private func isTokenValid(_ token: String) -> Bool {
+        
         do {
             let jwt = try decode(jwt: token)
             return !jwt.expired

@@ -12,7 +12,6 @@ struct AuthView: View {
 
     @StateObject private var authSession: AuthSession = AuthSession()
 
-    
     var body: some View {
         ZStack {
             switch($authSession.viewState.wrappedValue) {

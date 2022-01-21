@@ -10,7 +10,7 @@ import Foundation
 import Resolver
 
 @MainActor
-class SignupViewModel: ObservableObject {
+class SignupViewModel: ObservableObject, ErrorHandler {
     
     @Published var emailTextField: String = ""
     @Published var passwordTextField: String = ""
@@ -62,9 +62,5 @@ class SignupViewModel: ObservableObject {
                 self.isFormValid =  name.trim().count >= 1 && email.trim().lowercased().isValidEmail() && password.count >= 8
             }.store(in: &cancellable)
     }
-    
-}
-
-extension SignupViewModel: ErrorHandler {
     
 }

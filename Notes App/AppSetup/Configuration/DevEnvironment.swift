@@ -7,7 +7,8 @@
 
 import Foundation
 
-enum DevEnvironment: String { // 1
+enum DevEnvironment: String {
+    
     case debugDevelopment = "Debug Development"
     case releaseDevelopment = "Release Development"
 

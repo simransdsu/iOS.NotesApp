@@ -20,12 +20,14 @@ class AuthSession: ObservableObject {
     private var isUserLoggedIn: Bool = false
     
     init() {
+        
         Task {
             await checkIsUserLoggedIn()
         }
     }
     
     func checkIsUserLoggedIn() async -> Bool {
+        
         do {
             viewState = .loading
             isUserLoggedIn = try await authController.isUserLoggedIn()
@@ -37,15 +39,18 @@ class AuthSession: ObservableObject {
     }
     
     func logout() {
+        
         tokenService.logout()
         viewState = .loggedOut
     }
     
     func changeViewState() {
+        
         viewState = .loggedOut
     }
     
     private func updateViewState() {
+        
         if isUserLoggedIn {
             viewState = .loggedIn
         } else {

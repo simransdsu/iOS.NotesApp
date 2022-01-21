@@ -52,14 +52,14 @@
 		49EE175C278AC4F500A38E4F /* NotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE175B278AC4F500A38E4F /* NotesController.swift */; };
 		49EE175E278AC50300A38E4F /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE175D278AC50300A38E4F /* NotesViewModel.swift */; };
 		49EE1760278AC57000A38E4F /* NotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE175F278AC57000A38E4F /* NotesService.swift */; };
-		49EE1762278AC6CD00A38E4F /* HttpLoggedInUserResponser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE1761278AC6CD00A38E4F /* HttpLoggedInUserResponser.swift */; };
+		49EE1762278AC6CD00A38E4F /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE1761278AC6CD00A38E4F /* UserInfo.swift */; };
 		49F739552787F44100389DD3 /* Canada_ClapsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F739542787F44100389DD3 /* Canada_ClapsApp.swift */; };
 		49F739572787F44100389DD3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F739562787F44100389DD3 /* MainView.swift */; };
 		49F739592787F44400389DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F739582787F44400389DD3 /* Assets.xcassets */; };
 		49F7395C2787F44400389DD3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49F7395B2787F44400389DD3 /* Preview Assets.xcassets */; };
-		49F739662787F44500389DD3 /* Canada_ClapsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F739652787F44500389DD3 /* Canada_ClapsTests.swift */; };
-		49F739702787F44500389DD3 /* Canada_ClapsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F7396F2787F44500389DD3 /* Canada_ClapsUITests.swift */; };
-		49F739722787F44500389DD3 /* Canada_ClapsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F739712787F44500389DD3 /* Canada_ClapsUITestsLaunchTests.swift */; };
+		49F739662787F44500389DD3 /* Notes_AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F739652787F44500389DD3 /* Notes_AppTests.swift */; };
+		49F739702787F44500389DD3 /* Notes_AppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F7396F2787F44500389DD3 /* Notes_AppUITests.swift */; };
+		49F739722787F44500389DD3 /* Notes_AppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F739712787F44500389DD3 /* Notes_AppUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,17 +124,17 @@
 		49EE175B278AC4F500A38E4F /* NotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesController.swift; sourceTree = "<group>"; };
 		49EE175D278AC50300A38E4F /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
 		49EE175F278AC57000A38E4F /* NotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesService.swift; sourceTree = "<group>"; };
-		49EE1761278AC6CD00A38E4F /* HttpLoggedInUserResponser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpLoggedInUserResponser.swift; sourceTree = "<group>"; };
+		49EE1761278AC6CD00A38E4F /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 		49F739512787F44100389DD3 /* Notes App Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes App Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F739542787F44100389DD3 /* Canada_ClapsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canada_ClapsApp.swift; sourceTree = "<group>"; };
 		49F739562787F44100389DD3 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		49F739582787F44400389DD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49F7395B2787F44400389DD3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49F739612787F44500389DD3 /* Notes AppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Notes AppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		49F739652787F44500389DD3 /* Canada_ClapsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canada_ClapsTests.swift; sourceTree = "<group>"; };
+		49F739652787F44500389DD3 /* Notes_AppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes_AppTests.swift; sourceTree = "<group>"; };
 		49F7396B2787F44500389DD3 /* Notes AppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Notes AppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		49F7396F2787F44500389DD3 /* Canada_ClapsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canada_ClapsUITests.swift; sourceTree = "<group>"; };
-		49F739712787F44500389DD3 /* Canada_ClapsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canada_ClapsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		49F7396F2787F44500389DD3 /* Notes_AppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes_AppUITests.swift; sourceTree = "<group>"; };
+		49F739712787F44500389DD3 /* Notes_AppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notes_AppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,7 +169,7 @@
 			children = (
 				496765572789650300237FF3 /* HttpMessageResponse.swift */,
 				49EE1742278980C900A38E4F /* HttpLoginSuccessResponse.swift */,
-				49EE1761278AC6CD00A38E4F /* HttpLoggedInUserResponser.swift */,
+				49EE1761278AC6CD00A38E4F /* UserInfo.swift */,
 				499C700627991A7C003A80E1 /* Note.swift */,
 			);
 			path = Models;
@@ -395,7 +395,7 @@
 		49F739642787F44500389DD3 /* Notes AppTests */ = {
 			isa = PBXGroup;
 			children = (
-				49F739652787F44500389DD3 /* Canada_ClapsTests.swift */,
+				49F739652787F44500389DD3 /* Notes_AppTests.swift */,
 			);
 			path = "Notes AppTests";
 			sourceTree = "<group>";
@@ -403,8 +403,8 @@
 		49F7396E2787F44500389DD3 /* Notes AppUITests */ = {
 			isa = PBXGroup;
 			children = (
-				49F7396F2787F44500389DD3 /* Canada_ClapsUITests.swift */,
-				49F739712787F44500389DD3 /* Canada_ClapsUITestsLaunchTests.swift */,
+				49F7396F2787F44500389DD3 /* Notes_AppUITests.swift */,
+				49F739712787F44500389DD3 /* Notes_AppUITestsLaunchTests.swift */,
 			);
 			path = "Notes AppUITests";
 			sourceTree = "<group>";
@@ -557,7 +557,7 @@
 				499C700727991A7C003A80E1 /* Note.swift in Sources */,
 				4967650D27892F3E00237FF3 /* String+Extensions.swift in Sources */,
 				49B62C8C27880AFD00129D2F /* HomeView.swift in Sources */,
-				49EE1762278AC6CD00A38E4F /* HttpLoggedInUserResponser.swift in Sources */,
+				49EE1762278AC6CD00A38E4F /* UserInfo.swift in Sources */,
 				49EE1756278A9D8100A38E4F /* CCLoadingView.swift in Sources */,
 				49EE175E278AC50300A38E4F /* NotesViewModel.swift in Sources */,
 				496765582789650300237FF3 /* HttpMessageResponse.swift in Sources */,
@@ -600,7 +600,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49F739662787F44500389DD3 /* Canada_ClapsTests.swift in Sources */,
+				49F739662787F44500389DD3 /* Notes_AppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,8 +608,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49F739722787F44500389DD3 /* Canada_ClapsUITestsLaunchTests.swift in Sources */,
-				49F739702787F44500389DD3 /* Canada_ClapsUITests.swift in Sources */,
+				49F739722787F44500389DD3 /* Notes_AppUITestsLaunchTests.swift in Sources */,
+				49F739702787F44500389DD3 /* Notes_AppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

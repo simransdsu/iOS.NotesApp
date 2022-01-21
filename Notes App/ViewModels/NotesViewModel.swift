@@ -23,11 +23,11 @@ class NotesViewModel: ObservableObject, ErrorHandler {
     @Published var noteText: String = ""
     
     func getNotes() async {
+        
         isLoading = true
         errorOccurred = false
         
         do {
-            
             notes = try await notesController.getNotes()
         } catch  {
             errorOccurred = true
@@ -37,6 +37,7 @@ class NotesViewModel: ObservableObject, ErrorHandler {
     }
     
     func saveNote() async {
+        
         isLoading = true
         errorOccurred = false
         
@@ -52,6 +53,7 @@ class NotesViewModel: ObservableObject, ErrorHandler {
     }
     
     func deleteNote(withId id: Int) async {
+        
         isLoading = true
         errorOccurred = false
         

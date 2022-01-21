@@ -8,6 +8,7 @@
 import Foundation
 
 enum AuthViewState: Equatable {
+    
     case loading
     case loggedIn
     case loggedOut

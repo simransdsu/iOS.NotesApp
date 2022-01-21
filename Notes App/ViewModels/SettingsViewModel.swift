@@ -19,6 +19,7 @@ class SettingsViewModel: ObservableObject, ErrorHandler {
     @Published var isLoading: Bool = false
     
     func getUserInfo() async {
+        
         isLoading = true
         errorOccurred = false
         
