@@ -1,5 +1,5 @@
 //
-//  HttpLoggedInUserResponser.swift
+//  UserInfor.swift
 //  Notes App
 //
 //  Created by Simran Preet Singh Narang on 2022-01-08.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct HttpLoggedInUserResponse: Codable {
+struct UserInfo: Codable {
     let userID: Int
     let username, email, name: String
     let isActive: Int

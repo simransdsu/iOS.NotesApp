@@ -15,10 +15,12 @@ extension Resolver: ResolverRegistering {
         register { URLSession(configuration: .default) }
         
         register { AuthController() }
-        register { HomeController() }
+        register { NotesController() }
+        register { SettingsController() }
         
         register { AuthService() }
         register { TokenService() }
+        register { NotesService() }
         register { UserService() }
         
         register { NetworkingClient() }

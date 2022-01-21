@@ -31,4 +31,9 @@ class URLs {
     static var POST_loginURL: String { return baseURL + "/login" }
     static var POST_me: String { return baseURL + "/me" }
     static var POST_refreshToken: String { return baseURL + "/refreshToken" }
+    static var GET_notes: String { return baseURL + "/notes" }
+    static var POST_notes: String { return baseURL + "/notes" }
+    static func DELETE_notes(id: Int) -> String {
+         return baseURL + "/notes/\(id)"
+    }
 }

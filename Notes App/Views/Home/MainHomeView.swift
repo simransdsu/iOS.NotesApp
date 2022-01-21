@@ -18,7 +18,7 @@ struct MainHomeView: View {
     var body: some View {
         TabView {
             NavigationView {
-                HomeView()
+                NotesView()
                     .navigationTitle("Home")
             }.tabItem {
                 VStack {
@@ -29,24 +29,13 @@ struct MainHomeView: View {
             
             
             NavigationView {
-                SearchView()
-                    .navigationTitle("Search")
-            }.tabItem {
-                VStack {
-                    Image(systemName: "magnifyingglass")
-                    Text("Search")
-                }
-            }.tag(1)
-            
-            
-            NavigationView {
                 SettingsView()
             }.tabItem {
                 VStack {
                     Image(systemName: "gear")
                     Text("Settings")
                 }
-            }.tag(2)
+            }.tag(1)
         }
     }
 }

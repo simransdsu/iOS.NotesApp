@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "49F739502787F44100389DD3"
-               BuildableName = "Canada Claps Dev.app"
+               BuildableName = "Notes App Dev.app"
                BlueprintName = "Notes App"
                ReferencedContainer = "container:Notes App.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "49F739602787F44500389DD3"
-               BuildableName = "Canada ClapsTests.xctest"
+               BuildableName = "Notes AppTests.xctest"
                BlueprintName = "Notes AppTests"
                ReferencedContainer = "container:Notes App.xcodeproj">
             </BuildableReference>
@@ -43,7 +43,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "49F7396A2787F44500389DD3"
-               BuildableName = "Canada ClapsUITests.xctest"
+               BuildableName = "Notes AppUITests.xctest"
                BlueprintName = "Notes AppUITests"
                ReferencedContainer = "container:Notes App.xcodeproj">
             </BuildableReference>
@@ -65,7 +65,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "49F739502787F44100389DD3"
-            BuildableName = "Canada Claps Dev.app"
+            BuildableName = "Notes App Dev.app"
             BlueprintName = "Notes App"
             ReferencedContainer = "container:Notes App.xcodeproj">
          </BuildableReference>
@@ -82,7 +82,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "49F739502787F44100389DD3"
-            BuildableName = "Canada Claps Dev.app"
+            BuildableName = "Notes App Dev.app"
             BlueprintName = "Notes App"
             ReferencedContainer = "container:Notes App.xcodeproj">
          </BuildableReference>

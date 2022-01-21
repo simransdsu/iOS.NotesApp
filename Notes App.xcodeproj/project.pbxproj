@@ -28,6 +28,12 @@
 		49676554278960FB00237FF3 /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49676553278960FB00237FF3 /* NetworkingClient.swift */; };
 		496765562789615000237FF3 /* Data+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496765552789615000237FF3 /* Data+Extensions.swift */; };
 		496765582789650300237FF3 /* HttpMessageResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 496765572789650300237FF3 /* HttpMessageResponse.swift */; };
+		499C7001279916DA003A80E1 /* CCRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C7000279916DA003A80E1 /* CCRoundedButton.swift */; };
+		499C7003279917BB003A80E1 /* AddNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C7002279917BB003A80E1 /* AddNoteView.swift */; };
+		499C700727991A7C003A80E1 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499C700627991A7C003A80E1 /* Note.swift */; };
+		49B47B91279A67C80025412F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B47B90279A67C80025412F /* UserService.swift */; };
+		49B47B93279A68530025412F /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B47B92279A68530025412F /* SettingsViewModel.swift */; };
+		49B47B95279A68830025412F /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B47B94279A68830025412F /* SettingsController.swift */; };
 		49B62C8C27880AFD00129D2F /* MainHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B62C8B27880AFD00129D2F /* MainHomeView.swift */; };
 		49B62C8E2788105800129D2F /* CCCloseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B62C8D2788105800129D2F /* CCCloseButton.swift */; };
 		49B62C90278810BD00129D2F /* CCFootnoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B62C8F278810BD00129D2F /* CCFootnoteButton.swift */; };
@@ -37,15 +43,15 @@
 		49EE1748278A2F6600A38E4F /* JWTDecode in Frameworks */ = {isa = PBXBuildFile; productRef = 49EE1747278A2F6600A38E4F /* JWTDecode */; };
 		49EE174A278A346A00A38E4F /* AuthSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE1749278A346A00A38E4F /* AuthSession.swift */; };
 		49EE174D278A7D7500A38E4F /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE174C278A7D7500A38E4F /* SettingsView.swift */; };
-		49EE174F278A7EBC00A38E4F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE174E278A7EBC00A38E4F /* HomeView.swift */; };
+		49EE174F278A7EBC00A38E4F /* NotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE174E278A7EBC00A38E4F /* NotesView.swift */; };
 		49EE1751278A7ED300A38E4F /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE1750278A7ED300A38E4F /* SearchView.swift */; };
 		49EE1754278A854000A38E4F /* AuthViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE1753278A854000A38E4F /* AuthViewState.swift */; };
 		49EE1756278A9D8100A38E4F /* CCLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE1755278A9D8100A38E4F /* CCLoadingView.swift */; };
 		49EE1758278AB7B100A38E4F /* AuthNetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE1757278AB7B100A38E4F /* AuthNetworkingClient.swift */; };
 		49EE175A278ABCF400A38E4F /* ErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE1759278ABCF400A38E4F /* ErrorHandler.swift */; };
-		49EE175C278AC4F500A38E4F /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE175B278AC4F500A38E4F /* HomeController.swift */; };
-		49EE175E278AC50300A38E4F /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE175D278AC50300A38E4F /* HomeViewModel.swift */; };
-		49EE1760278AC57000A38E4F /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE175F278AC57000A38E4F /* UserService.swift */; };
+		49EE175C278AC4F500A38E4F /* NotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE175B278AC4F500A38E4F /* NotesController.swift */; };
+		49EE175E278AC50300A38E4F /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE175D278AC50300A38E4F /* NotesViewModel.swift */; };
+		49EE1760278AC57000A38E4F /* NotesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE175F278AC57000A38E4F /* NotesService.swift */; };
 		49EE1762278AC6CD00A38E4F /* HttpLoggedInUserResponser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EE1761278AC6CD00A38E4F /* HttpLoggedInUserResponser.swift */; };
 		49F739552787F44100389DD3 /* Canada_ClapsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F739542787F44100389DD3 /* Canada_ClapsApp.swift */; };
 		49F739572787F44100389DD3 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49F739562787F44100389DD3 /* MainView.swift */; };
@@ -95,6 +101,12 @@
 		49676553278960FB00237FF3 /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
 		496765552789615000237FF3 /* Data+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Extensions.swift"; sourceTree = "<group>"; };
 		496765572789650300237FF3 /* HttpMessageResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMessageResponse.swift; sourceTree = "<group>"; };
+		499C7000279916DA003A80E1 /* CCRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCRoundedButton.swift; sourceTree = "<group>"; };
+		499C7002279917BB003A80E1 /* AddNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteView.swift; sourceTree = "<group>"; };
+		499C700627991A7C003A80E1 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		49B47B90279A67C80025412F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		49B47B92279A68530025412F /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		49B47B94279A68830025412F /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		49B62C8B27880AFD00129D2F /* MainHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainHomeView.swift; sourceTree = "<group>"; };
 		49B62C8D2788105800129D2F /* CCCloseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCCloseButton.swift; sourceTree = "<group>"; };
 		49B62C8F278810BD00129D2F /* CCFootnoteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCFootnoteButton.swift; sourceTree = "<group>"; };
@@ -103,15 +115,15 @@
 		49EE1744278A2BE500A38E4F /* TokenService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenService.swift; sourceTree = "<group>"; };
 		49EE1749278A346A00A38E4F /* AuthSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSession.swift; sourceTree = "<group>"; };
 		49EE174C278A7D7500A38E4F /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		49EE174E278A7EBC00A38E4F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		49EE174E278A7EBC00A38E4F /* NotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesView.swift; sourceTree = "<group>"; };
 		49EE1750278A7ED300A38E4F /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		49EE1753278A854000A38E4F /* AuthViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewState.swift; sourceTree = "<group>"; };
 		49EE1755278A9D8100A38E4F /* CCLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCLoadingView.swift; sourceTree = "<group>"; };
 		49EE1757278AB7B100A38E4F /* AuthNetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthNetworkingClient.swift; sourceTree = "<group>"; };
 		49EE1759278ABCF400A38E4F /* ErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandler.swift; sourceTree = "<group>"; };
-		49EE175B278AC4F500A38E4F /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
-		49EE175D278AC50300A38E4F /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
-		49EE175F278AC57000A38E4F /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		49EE175B278AC4F500A38E4F /* NotesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesController.swift; sourceTree = "<group>"; };
+		49EE175D278AC50300A38E4F /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
+		49EE175F278AC57000A38E4F /* NotesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesService.swift; sourceTree = "<group>"; };
 		49EE1761278AC6CD00A38E4F /* HttpLoggedInUserResponser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpLoggedInUserResponser.swift; sourceTree = "<group>"; };
 		49F739512787F44100389DD3 /* Notes App Dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Notes App Dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49F739542787F44100389DD3 /* Canada_ClapsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Canada_ClapsApp.swift; sourceTree = "<group>"; };
@@ -158,6 +170,7 @@
 				496765572789650300237FF3 /* HttpMessageResponse.swift */,
 				49EE1742278980C900A38E4F /* HttpLoginSuccessResponse.swift */,
 				49EE1761278AC6CD00A38E4F /* HttpLoggedInUserResponser.swift */,
+				499C700627991A7C003A80E1 /* Note.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,6 +178,7 @@
 		4902F76327880293001CFA61 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				49B47B8F279A5F730025412F /* Notes */,
 				49EE1752278A7EDB00A38E4F /* Search */,
 				49EE174B278A7B9500A38E4F /* Settings */,
 				4902F77427880476001CFA61 /* CustomViews */,
@@ -179,7 +193,8 @@
 			isa = PBXGroup;
 			children = (
 				4967654F2789608D00237FF3 /* AuthController.swift */,
-				49EE175B278AC4F500A38E4F /* HomeController.swift */,
+				49EE175B278AC4F500A38E4F /* NotesController.swift */,
+				49B47B94279A68830025412F /* SettingsController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -192,7 +207,8 @@
 				4967650727892B5200237FF3 /* LoginViewModel.swift */,
 				4967650E2789374A00237FF3 /* SignupViewModel.swift */,
 				49EE1749278A346A00A38E4F /* AuthSession.swift */,
-				49EE175D278AC50300A38E4F /* HomeViewModel.swift */,
+				49EE175D278AC50300A38E4F /* NotesViewModel.swift */,
+				49B47B92279A68530025412F /* SettingsViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -202,7 +218,8 @@
 			children = (
 				49676551278960B300237FF3 /* AuthService.swift */,
 				49EE1744278A2BE500A38E4F /* TokenService.swift */,
-				49EE175F278AC57000A38E4F /* UserService.swift */,
+				49EE175F278AC57000A38E4F /* NotesService.swift */,
+				49B47B90279A67C80025412F /* UserService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -256,6 +273,7 @@
 				4967650927892CB900237FF3 /* CCResizableSquareImage.swift */,
 				49EE1755278A9D8100A38E4F /* CCLoadingView.swift */,
 				4908A99C278EA97000C73143 /* CCSplashScreenView.swift */,
+				499C7000279916DA003A80E1 /* CCRoundedButton.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -286,11 +304,19 @@
 			path = DependencyInjection;
 			sourceTree = "<group>";
 		};
+		49B47B8F279A5F730025412F /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				49EE174E278A7EBC00A38E4F /* NotesView.swift */,
+				499C7002279917BB003A80E1 /* AddNoteView.swift */,
+			);
+			path = Notes;
+			sourceTree = "<group>";
+		};
 		49B62C8A27880AF100129D2F /* Home */ = {
 			isa = PBXGroup;
 			children = (
 				49B62C8B27880AFD00129D2F /* MainHomeView.swift */,
-				49EE174E278A7EBC00A38E4F /* HomeView.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -524,15 +550,16 @@
 				4967650F2789374A00237FF3 /* SignupViewModel.swift in Sources */,
 				4902F77A27880480001CFA61 /* CCRoundedTextField.swift in Sources */,
 				4902F77927880480001CFA61 /* CCFloatingActionButton.swift in Sources */,
-				49EE174F278A7EBC00A38E4F /* HomeView.swift in Sources */,
+				49EE174F278A7EBC00A38E4F /* NotesView.swift in Sources */,
 				49F739572787F44100389DD3 /* MainView.swift in Sources */,
 				49B62C8E2788105800129D2F /* CCCloseButton.swift in Sources */,
 				49676552278960B300237FF3 /* AuthService.swift in Sources */,
+				499C700727991A7C003A80E1 /* Note.swift in Sources */,
 				4967650D27892F3E00237FF3 /* String+Extensions.swift in Sources */,
 				49B62C8C27880AFD00129D2F /* MainHomeView.swift in Sources */,
 				49EE1762278AC6CD00A38E4F /* HttpLoggedInUserResponser.swift in Sources */,
 				49EE1756278A9D8100A38E4F /* CCLoadingView.swift in Sources */,
-				49EE175E278AC50300A38E4F /* HomeViewModel.swift in Sources */,
+				49EE175E278AC50300A38E4F /* NotesViewModel.swift in Sources */,
 				496765582789650300237FF3 /* HttpMessageResponse.swift in Sources */,
 				49676554278960FB00237FF3 /* NetworkingClient.swift in Sources */,
 				4967650A27892CB900237FF3 /* CCResizableSquareImage.swift in Sources */,
@@ -540,24 +567,29 @@
 				49EE1743278980C900A38E4F /* HttpLoginSuccessResponse.swift in Sources */,
 				4967650827892B5200237FF3 /* LoginViewModel.swift in Sources */,
 				49EE1751278A7ED300A38E4F /* SearchView.swift in Sources */,
+				49B47B95279A68830025412F /* SettingsController.swift in Sources */,
 				4902F77B27880480001CFA61 /* CCRoundedSecureTextfield.swift in Sources */,
 				49EE1758278AB7B100A38E4F /* AuthNetworkingClient.swift in Sources */,
 				4902F77C27880480001CFA61 /* CCButton.swift in Sources */,
+				499C7001279916DA003A80E1 /* CCRoundedButton.swift in Sources */,
 				49B62C93278814AF00129D2F /* Colors.swift in Sources */,
 				4908A99D278EA97000C73143 /* CCSplashScreenView.swift in Sources */,
 				496765502789608D00237FF3 /* AuthController.swift in Sources */,
 				49EE175A278ABCF400A38E4F /* ErrorHandler.swift in Sources */,
+				49B47B91279A67C80025412F /* UserService.swift in Sources */,
 				49EE174D278A7D7500A38E4F /* SettingsView.swift in Sources */,
 				49EE1745278A2BE500A38E4F /* TokenService.swift in Sources */,
 				4967653D2789566C00237FF3 /* DevEnvironment.swift in Sources */,
 				4967654E27895F9900237FF3 /* DIResolver.swift in Sources */,
 				4902F78027880499001CFA61 /* AuthView.swift in Sources */,
 				4902F78127880499001CFA61 /* LoginView.swift in Sources */,
+				49B47B93279A68530025412F /* SettingsViewModel.swift in Sources */,
 				4902F78227880499001CFA61 /* SignUpView.swift in Sources */,
 				49EE174A278A346A00A38E4F /* AuthSession.swift in Sources */,
-				49EE1760278AC57000A38E4F /* UserService.swift in Sources */,
+				49EE1760278AC57000A38E4F /* NotesService.swift in Sources */,
+				499C7003279917BB003A80E1 /* AddNoteView.swift in Sources */,
 				49EE1754278A854000A38E4F /* AuthViewState.swift in Sources */,
-				49EE175C278AC4F500A38E4F /* HomeController.swift in Sources */,
+				49EE175C278AC4F500A38E4F /* NotesController.swift in Sources */,
 				496765562789615000237FF3 /* Data+Extensions.swift in Sources */,
 				496765482789596B00237FF3 /* BuildConfiguration.swift in Sources */,
 				49F739552787F44100389DD3 /* Canada_ClapsApp.swift in Sources */,
