@@ -12,6 +12,8 @@ struct AuthView: View {
 
     @StateObject private var authSession: AuthSession = AuthSession()
 
+    @State var showLoginView: Bool = true
+    
     var body: some View {
         ZStack {
             switch($authSession.viewState.wrappedValue) {
@@ -21,11 +23,11 @@ struct AuthView: View {
                 HomeView()
                     .environmentObject(authSession)
             case .loggedOut:
-                if authSession.showLoginView {
-                    LoginView()
+                if showLoginView {
+                    LoginView(showLoginView: $showLoginView)
                         .environmentObject(authSession)
                 } else {
-                    SignUpView()
+                    SignUpView(showLoginView: $showLoginView)
                         .environmentObject(authSession)
                 }
             case .error(_):

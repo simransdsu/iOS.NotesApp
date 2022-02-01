@@ -14,7 +14,6 @@ class AuthSession: ObservableObject {
     @Injected private var authController: AuthController
     @Injected private var tokenService: TokenService
     
-    @Published var showLoginView: Bool = true
     @Published var viewState: AuthViewState = .loading
     
     private var isUserLoggedIn: Bool = false

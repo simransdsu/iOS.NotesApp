@@ -10,7 +10,8 @@ import SwiftUI
 struct LoginView: View {
     
     @StateObject private var loginViewModel = LoginViewModel()
-    @EnvironmentObject private var authSession: AuthSession
+    
+    @Binding var showLoginView: Bool
     
     var body: some View {
         
@@ -76,7 +77,7 @@ extension LoginView {
     
     private func enableLoginView() {
         withAnimation {
-            authSession.showLoginView = false
+            showLoginView = false
         }
     }
     
@@ -89,6 +90,6 @@ extension LoginView {
 
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        LoginView(showLoginView: .constant(false))
     }
 }

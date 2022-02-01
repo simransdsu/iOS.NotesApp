@@ -88,6 +88,7 @@
 		4902F77E27880499001CFA61 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		4902F77F27880499001CFA61 /* SignUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		4908A99C278EA97000C73143 /* CCSplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCSplashScreenView.swift; sourceTree = "<group>"; };
+		490DE61727A8D6B200F82357 /* Notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Notes.md; sourceTree = "<group>"; };
 		4967650727892B5200237FF3 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		4967650927892CB900237FF3 /* CCResizableSquareImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CCResizableSquareImage.swift; sourceTree = "<group>"; };
 		4967650C27892F3E00237FF3 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
@@ -380,6 +381,7 @@
 				49F7395A2787F44400389DD3 /* Preview Content */,
 				49F739582787F44400389DD3 /* Assets.xcassets */,
 				4967653A2789564100237FF3 /* Notes-App-Info.plist */,
+				490DE61727A8D6B200F82357 /* Notes.md */,
 			);
 			path = "Notes App";
 			sourceTree = "<group>";

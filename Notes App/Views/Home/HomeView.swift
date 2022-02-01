@@ -10,10 +10,7 @@ import Resolver
 
 struct HomeView: View {
     
-    @Environment(\.presentationMode)
-    var presentationMode
-    
-    @EnvironmentObject var authSession: AuthSession
+    @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
         TabView {
